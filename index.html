@@ -10,35 +10,44 @@
         background: #000;
         font-family: Arial, sans-serif;
         color: #fff;
-        padding: 20px;
+        padding: 25px;
         text-align: center;
     }
 
     h1 {
-        font-size: 40px;
-        margin-bottom: 25px;
+        font-size: 42px;
         color: #00ff80;
-        text-shadow: 0 0 20px #00ff80;
+        text-shadow: 0 0 22px #00ff80;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
     }
 
-    .section-title {
-        font-size: 26px;
-        margin-top: 40px;
-        margin-bottom: 15px;
+    .about-box {
+        border: 2px solid #00ff80;
+        padding: 25px;
+        border-radius: 18px;
+        margin-bottom: 40px;
+        box-shadow: 0 0 25px #00ff80;
+        background: rgba(0, 255, 128, 0.06);
+    }
+
+    .section-heading {
+        font-size: 28px;
+        margin-bottom: 20px;
         color: #00ff80;
         text-shadow: 0 0 15px #00ff80;
     }
 
     .btn {
         display: block;
-        width: 85%;
+        width: 90%;
         max-width: 380px;
         margin: 12px auto;
-        padding: 15px 20px;
-        font-size: 20px;
+        padding: 15px;
+        font-size: 21px;
         color: #00ff80;
         border: 2px solid #00ff80;
-        border-radius: 10px;
+        border-radius: 12px;
         text-decoration: none;
         transition: 0.25s;
         background: rgba(0, 255, 128, 0.08);
@@ -52,62 +61,65 @@
         transform: scale(1.05);
     }
 
-    /* KING MAANAV button */
+    /* King Button */
     .king-btn {
-        border-color: #00ff80;
-        color: #000;
         background: #00ff80;
+        color: #000;
         font-weight: bold;
-        box-shadow: 0 0 30px #00ff80;
+        box-shadow: 0 0 35px #00ff80;
     }
 
     .king-btn:hover {
-        color: #00ff80;
         background: #000;
+        color: #00ff80;
         box-shadow: 0 0 40px #00ff80;
+    }
+
+    .bots-box {
+        margin-top: 40px;
+        border: 2px solid #00ff80;
+        padding: 25px;
+        border-radius: 18px;
+        box-shadow: 0 0 22px #00ff80;
+        background: rgba(0, 255, 128, 0.05);
     }
 
 </style>
 </head>
-
 <body>
 
 <h1>OFFICIAL — THE MAANAV WORLD</h1>
 
+<!-- COMBINED ABOUT SECTION -->
+<div class="about-box">
 
-<!-- PERSONAL SOCIAL LINKS -->
-<div class="section-title">🌐 PERSONAL LINKS</div>
+    <div class="section-heading">ABOUT MAANAV</div>
 
-<a href="https://www.youtube.com/@sexyXvenora" class="btn">📺 YouTube</a>
-<a href="https://www.instagram.com/cooldetective7/" class="btn">📸 Instagram</a>
-<a href="https://github.com/MaanavEgo" class="btn">💻 GitHub</a>
-<a href="https://T.ME/ABOUT_MAANAV" class="btn">📘 About Profile</a>
+    <a href="https://www.youtube.com/@sexyXvenora" class="btn">📺 YouTube</a>
+    <a href="https://www.instagram.com/cooldetective7/" class="btn">📸 Instagram</a>
+    <a href="https://github.com/MaanavEgo" class="btn">💻 GitHub</a>
+    <a href="https://T.ME/ABOUT_MAANAV" class="btn">📘 About Profile</a>
 
+    <br>
 
-<!-- THE LEGEND BUTTON -->
-<div class="section-title">👑 KING OF THIS WORLD</div>
-
-<a href="https://T.ME/III_MAA7NAV_III" class="btn king-btn">
-    👑 MAANAV
-</a>
-
-
-<!-- BOTS SECTION (WAITING FOR LINKS) -->
-<div class="section-title">🤖 ALL BOTS ZONE</div>
-
-<!-- 
-    YAHAN SAB BOTS KE BUTTON ADD HONGE
-    Bas mujhe bot name + link de dena
--->
-
-<div id="bots-area">
-
-<!-- Example (remove later)
-<a href="#" class="btn">🎵 Music Bot</a>
--->
+    <a href="https://T.ME/III_MAA7NAV_III" class="btn king-btn">👑 MAANAV</a>
 
 </div>
 
+
+<!-- BOTS SECTION -->
+<div class="bots-box">
+    <div class="section-heading">🤖 ALL BOTS</div>
+
+    <!-- Yahan sab bots aayenge -->
+    <div id="botList">
+
+        <!-- Example (delete later)
+        <a href="#" class="btn">🎵 Music Bot</a>
+        -->
+
+    </div>
+</div>
 
 </body>
 </html>
