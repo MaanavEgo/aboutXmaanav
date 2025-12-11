@@ -1,124 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>THE MAANAV WORLD — Official</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>THE MAANAV WORLD — OFFICIAL</title>
 
 <style>
     body {
+        margin: 0;
+        padding: 0;
         background: #000;
         font-family: Arial, sans-serif;
         color: #fff;
-        padding: 25px;
         text-align: center;
     }
 
     h1 {
-        font-size: 42px;
+        margin-top: 25px;
+        font-size: 40px;
         color: #00ff80;
-        text-shadow: 0 0 22px #00ff80;
-        margin-bottom: 25px;
-        letter-spacing: 1px;
+        text-shadow: 0 0 25px #00ff80;
     }
 
-    .about-box {
+    .button-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .card {
+        width: 180px;
+        height: 180px;
+        background: rgba(0, 255, 128, 0.1);
         border: 2px solid #00ff80;
-        padding: 25px;
         border-radius: 18px;
-        margin-bottom: 40px;
-        box-shadow: 0 0 25px #00ff80;
-        background: rgba(0, 255, 128, 0.06);
-    }
-
-    .section-heading {
-        font-size: 28px;
-        margin-bottom: 20px;
-        color: #00ff80;
-        text-shadow: 0 0 15px #00ff80;
-    }
-
-    .btn {
-        display: block;
-        width: 90%;
-        max-width: 380px;
-        margin: 12px auto;
-        padding: 15px;
-        font-size: 21px;
-        color: #00ff80;
-        border: 2px solid #00ff80;
-        border-radius: 12px;
-        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px #00ff80;
         transition: 0.25s;
-        background: rgba(0, 255, 128, 0.08);
-        box-shadow: 0 0 12px #00ff80;
     }
 
-    .btn:hover {
-        background: #00ff80;
-        color: #000;
-        box-shadow: 0 0 25px #00ff80;
-        transform: scale(1.05);
-    }
-
-    /* King Button */
-    .king-btn {
-        background: #00ff80;
-        color: #000;
-        font-weight: bold;
+    .card:hover {
+        transform: scale(1.08);
         box-shadow: 0 0 35px #00ff80;
     }
 
-    .king-btn:hover {
-        background: #000;
+    .logo {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #00ff80;
+        animation: glow 1.6s infinite alternate;
+    }
+
+    @keyframes glow {
+        from { box-shadow: 0 0 10px #00ff80; }
+        to { box-shadow: 0 0 25px #00ff80; }
+    }
+
+    .card a {
+        margin-top: 12px;
+        text-decoration: none;
+        font-size: 18px;
         color: #00ff80;
-        box-shadow: 0 0 40px #00ff80;
+        font-weight: bold;
     }
-
-    .bots-box {
-        margin-top: 40px;
-        border: 2px solid #00ff80;
-        padding: 25px;
-        border-radius: 18px;
-        box-shadow: 0 0 22px #00ff80;
-        background: rgba(0, 255, 128, 0.05);
-    }
-
 </style>
 </head>
 <body>
 
-<h1>OFFICIAL — THE MAANAV WORLD</h1>
+<h1>THE MAANAV WORLD — OFFICIAL</h1>
 
-<!-- COMBINED ABOUT SECTION -->
-<div class="about-box">
+<div class="button-grid">
 
-    <div class="section-heading">ABOUT MAANAV</div>
-
-    <a href="https://www.youtube.com/@sexyXvenora" class="btn">📺 YouTube</a>
-    <a href="https://www.instagram.com/cooldetective7/" class="btn">📸 Instagram</a>
-    <a href="https://github.com/MaanavEgo" class="btn">💻 GitHub</a>
-    <a href="https://T.ME/ABOUT_MAANAV" class="btn">📘 About Profile</a>
-
-    <br>
-
-    <a href="https://T.ME/III_MAA7NAV_III" class="btn king-btn">👑 MAANAV</a>
-
-</div>
-
-
-<!-- BOTS SECTION -->
-<div class="bots-box">
-    <div class="section-heading">🤖 ALL BOTS</div>
-
-    <!-- Yahan sab bots aayenge -->
-    <div id="botList">
-
-        <!-- Example (delete later)
-        <a href="#" class="btn">🎵 Music Bot</a>
-        -->
-
+    <!-- MAANAV BOTS BUTTON -->
+    <div class="card">
+        <div class="logo"></div>
+        <a href="https://maanavego.github.io/MaanavNetwork/">MAANAV BOTS</a>
     </div>
+
+    <!-- YouTube -->
+    <div class="card">
+        <div class="logo"></div>
+        <a href="https://www.youtube.com/@sexyXvenora">YouTube</a>
+    </div>
+
+    <!-- Instagram -->
+    <div class="card">
+        <div class="logo"></div>
+        <a href="https://www.instagram.com/cooldetective7/">Instagram</a>
+    </div>
+
+    <!-- GitHub -->
+    <div class="card">
+        <div class="logo"></div>
+        <a href="https://github.com/MaanavEgo">GitHub</a>
+    </div>
+
+    <!-- About Profile -->
+    <div class="card">
+        <div class="logo"></div>
+        <a href="https://T.ME/ABOUT_MAANAV">About</a>
+    </div>
+
+    <!-- MAIN MAANAV (KING) -->
+    <div class="card">
+        <div class="logo"></div>
+        <a href="https://T.ME/III_MAA7NAV_III">MAANAV</a>
+    </div>
+
 </div>
 
 </body>
